@@ -13,13 +13,13 @@ function App() {
  <>
     <CssBaseline />
       <Routes>
+        <Route path="/" element={<Login/>}/>
         <Route path='/' element={<ProtectedRoutes/>}>
 
 
        
         <Route path='/profile' element={<Profile/>}/>
         </Route>
-    
        <Route path='/login' element={<Login/>}/>
         <Route path="/signup" element={<Signup  />} />
       </Routes>
