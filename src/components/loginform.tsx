@@ -67,6 +67,8 @@ const LoginForm = () => {
       if (formik.values.email === localStorage.getItem("email") && formik.values.password === localStorage.getItem("password")) {
         navigate("/profile");
       } else {
+        alert('invalid email or password')
+       window.location.reload();
         console.log("invalid email or  password");
       }
       // setTimeout(() => {
