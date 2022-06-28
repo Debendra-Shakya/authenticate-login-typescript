@@ -26,7 +26,7 @@ const Profile = () => {
             onClick={() => {
               localStorage.clear();
               alert("logged out");
-              navigate("/login");
+              navigate("/");
             }}
           >
             logout
